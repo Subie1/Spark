@@ -1,60 +1,24 @@
-# Template to avoid repetitive making of API & Frontend
-## Packages used:
-### Runner
-- Dotenv (dotenv)
-    - Loads the .env
+# The self-hosted chatting platform
+> [!NOTE]
+> Made with 💖 by Subie1
 
-### Backend
-- Express (express)
-    - The main networking
-- Nodemon (nodemon)
-    - Package for developer environment & restarting on file change
+`              GETTING STARTED              `
+- You need to install all the dependencies using the `install-all` script.
+> `npm run install-all`
 
-### Frontend
-(Apart from all the vite & react pre-installs)
-- React Icons (react-icons)
-    - Easy import icons from your favorite services
-- ESLint (eslint)
-    - Easily organise your code by having enfornced syntax real time
-- TailwindCSS (tailwindcss, autoprefixer)
-    - Easier way to utilise CSS
-- Axios (axios)
-    - Easily send out HTTP requests
+- Make sure you have `rust` and `cargo` installed as that's what tauri depends on.
 
-## Installing
-- This requires `git` & `nodejs` installed.
-```
-git clone https://github.com/Subie1/ExpressViteTemplate
-cd ExpressViteTemplate
-```
+- Run the developer environment.
+> `tauri dev` (If you've installed tauri globally)
+> `npm run tauri dev` (If you've only installed tauri through **Step #1**)
 
-- This is for the basic setup now you need to install every package
-    ## Automatic:
-    ```
-    npm run install-all
-    ```
+`                  FEATURES                 `
+- Live chatting.
+- DMs and adding friends.
+- Admin accounts.
+- Themes & Profile Customization.
+- Global Group.
+- Community Groups.
 
-    ## Manual:
-    ### Core Install
-    ```
-    npm i
-    ```
-
-    ### Backend Install
-    ```
-    cd src/api
-    npm i
-    ```
-
-    ### Frontend Install
-    ```
-    cd src/dashboard
-    npm i
-    ```
-
-# Run
-```
-node .
-```
-
-# Enjoy!
+`                MAKE SURE TO               `
+> Enjoy Chatting!
