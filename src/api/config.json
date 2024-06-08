@@ -1,0 +1,42 @@
+{
+	"API_VERSION": "v0.0.1A",
+	"CLIENT_VERSION": "v0.0.1A",
+
+	"MAX_NAME_LENGTH": 16,
+	"MIN_NAME_LENGTH": 3,
+
+	"MAX_PASSWORD_LENGTH": 40,
+	"MIN_PASSWORD_LENGTH": 8,
+
+	"MAX_MESSAGE_LENGTH": 1000,
+	"MIN_MESSAGE_LENGTH": 1,
+
+	"ID_BYTE_SIZE": 6,
+
+	"DEFAULT_SETTINGS": {
+		"notifications": {
+			"type": "boolean",
+			"value": false
+		},
+		"bio": {
+			"type": "string",
+			"value": ""
+		},
+		"description": {
+			"type": "string",
+			"value": ""
+		},
+		"ring": {
+			"type": "hex",
+			"value": "#ffffff"
+		},
+		"hobbies": {
+			"type": "array",
+			"value": []
+		},
+		"requests": {
+			"type": "boolean",
+			"value": true
+		}
+	}
+}

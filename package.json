@@ -1,0 +1,42 @@
+{
+	"name": "expressvitetemplate",
+	"version": "1.0.0",
+	"description": "Basic template for having Vite Frontend & Express Backend",
+	"main": "index.js",
+	"scripts": {
+		"tauri": "tauri",
+		"dev": "node .",
+		"package": "node package.js",
+		"build": "cd ./src/dashboard && npm run build",
+		"install-backend": "cd ./src/api && npm i",
+		"install-frontend": "cd ./src/dashboard && npm i",
+		"install-all": "npm i && npm run install-backend && npm run install-frontend",
+		"update-backend": "cd ./src/api && npm update",
+		"update-frontend": "cd ./src/dashboard && npm update",
+		"update-all": "npm update && npm run update-backend && npm run update-frontend"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Subie1/ExpressViteTemplate.git"
+	},
+	"keywords": [
+		"Template",
+		"NodeJS",
+		"ReactJS",
+		"Express"
+	],
+	"author": "Subie",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Subie1/ExpressViteTemplate/issues"
+	},
+	"homepage": "https://github.com/Subie1/ExpressViteTemplate#readme",
+	"dependencies": {
+		"@tauri-apps/api": "^2.0.0-beta.13",
+		"colors": "^1.4.0",
+		"dotenv": "^16.3.1"
+	},
+	"devDependencies": {
+		"@tauri-apps/cli": "^2.0.0-beta.20"
+	}
+}

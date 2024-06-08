@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--text: 0 0 0;
+		--background: 255 255 255;
+		--primary: 78 65 65;
+		--secondary: 184 163 163;
+		--accent: 146 104 104;
+	}
+
+	.light {
+		--text: 0 0 0;
+		--background: 255 255 255;
+		--primary: 78 65 65;
+		--secondary: 184 163 163;
+		--accent: 146 104 104;
+	}
+
+	.snow {
+		--text: 7 9 8;
+		--background: 245 247 247;
+		--primary: 113 146 139;
+		--secondary: 171 184 191;
+		--accent: 141 153 168;
+	}
+
+	.honey {
+		--text: 21 18 15;
+		--background: 248 245 241;
+		--primary: 205 156 71;
+		--secondary: 239 198 129;
+		--accent: 253 182 58;
+	}
+
+	.dark {
+		--text: 255 255 255;
+		--background: 0 0 0;
+		--primary: 189 176 176;
+		--secondary: 93 72 72;
+		--accent: 150 108 108;
+	}
+
+	.peach {
+		--text: 246 236 234;
+		--background: 18 9 7;
+		--primary: 216 167 157;
+		--secondary: 127 61 47;
+		--accent: 195 104 85;
+	}
+
+	.comfy {
+		--text: 237 237 237;
+		--background: 22 21 15;
+		--primary: 211 166 165;
+		--secondary: 107 113 59;
+		--accent: 186 161 97;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+	background: #191919;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #1c1c1c;
+}
+
+html,
+body,
+#root {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	font-family: "Nunito", sans-serif;
+}
