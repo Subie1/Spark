@@ -42,7 +42,7 @@ export default function MessageInput({ isDM }) {
 		<form
 			id="form_data"
 			onSubmit={SendMessage}
-			className="flex items-center justify-center rounded-lg w-full px-2 py-2 bg-background border border-text/10"
+			className="flex items-center relative justify-center rounded-lg w-full px-2 py-2 bg-background border border-text/10"
 		>
 			<Upload />
 			<input

@@ -120,7 +120,7 @@ function CustomOption({ options, setOptions }) {
 			<div className="w-full flex items-center justify-center">
 				<button
 					onClick={() => create()}
-					className="p-2 gap-2 flex items-center bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text justify-center"
+					className="gap-2 flex items-center bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text justify-center"
 				>
 					<span>Create</span>
 					<Icon name="TbChevronRight" className="text-accent" />

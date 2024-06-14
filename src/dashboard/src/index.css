@@ -60,6 +60,22 @@
 		--secondary: 107 113 59;
 		--accent: 186 161 97;
 	}
+
+	.midnight-light {
+		--text: 16 18 25;
+		--background: 243 244 247;
+		--primary: 55 60 83;
+		--secondary: 176 154 188;
+		--accent: 122 85 124;
+	}
+
+	.midnight-dark {
+		--text: 230 232 239;
+		--background: 8 9 12;
+		--primary: 172 177 200;
+		--secondary: 89 67 101;
+		--accent: 168 131 170;
+	}
 }
 
 ::-webkit-scrollbar {
@@ -77,6 +93,10 @@
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #1c1c1c;
+}
+
+::selection {
+    background-color: transparent;
 }
 
 html,

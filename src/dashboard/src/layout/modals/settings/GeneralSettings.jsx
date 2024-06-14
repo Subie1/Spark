@@ -7,9 +7,9 @@ function RenderTheme({ name, value }) {
 	const { theme, setTheme } = useContext(context);
 
 	return (
-		<div onClick={() => setTheme(value)} className={`${value} cursor-pointer flex flex-col items-center justify-center`}>
-			<div className={`${value === theme ? "border border-secondary" : ""} size-10 rounded-full bg-background`}></div>
-			<span className="text-xs">{name}</span>
+		<div onClick={() => setTheme(value)} className={`${value} relative cursor-pointer group flex flex-col items-center justify-center`}>
+			<div className={`${value === theme ? "ring-1 ring-offset-2 ring-offset-transparent ring-accent" : ""} size-10 rounded-full bg-gradient-to-br from-primary via-accent to-secondary`}></div>
+			<span className="text-xs absolute -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200">{name}</span>
 		</div>
 	);
 }
@@ -22,9 +22,12 @@ export default function GeneralSettings() {
 		{ name: "Light", value: "light" },
 		{ name: "Snow", value: "snow" },
 		{ name: "Honey", value: "honey" },
+		{ name: "Lavender", value: "midnight-light" },
+		{ value: ".splitter" },
 		{ name: "Dark", value: "dark" },
 		{ name: "Peach", value: "peach" },
 		{ name: "Comfy", value: "comfy" },
+		{ name: "Midnight", value: "midnight-dark" },
 	];
 
 	useEffect(() => {
@@ -56,9 +59,19 @@ export default function GeneralSettings() {
 					<div className="flex flex-col w-full items-start justify-center">
 						<span className="text-sm">Theme</span>
 						<div className="text-text/60 flex flex-wrap gap-1 hover:text-text/80 transition-all duration-300 pr-6">
-							{themes.map((t) => (
-								<RenderTheme name={t.name} value={t.value} key={t.value} />
-							))}
+							{themes.map((t) => {
+								if (t.value === ".splitter") return (
+									<div
+										key={t.value}
+										className="flex items-center justify-center"
+									>
+										<div className="h-7 rounded-full w-px bg-text/5"></div>
+									</div>
+								);
+								return (
+									<RenderTheme name={t.name} value={t.value} key={t.value} />
+								);
+							})}
 						</div>
 					</div>
 				</div>

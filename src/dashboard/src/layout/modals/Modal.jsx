@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { context } from "../../lib/Context";
+import { motion } from "framer-motion";
 
 export default function Modal({ children }) {
 	const { setModal } = useContext(context);
@@ -11,11 +12,13 @@ export default function Modal({ children }) {
 			}
 			className="z-50 fixed flex items-center justify-center bg-black/40 w-full h-full"
 		>
-			<div
-				className="drop-shadow-lg backdrop-blur-sm flex flex-col rounded-xl bg-background/60 border border-text/10"
+			<motion.div
+				initial={{ scale: 0.5 }}
+				animate={{ scale: 1 }}
+				className="drop-shadow-lg backdrop-blur-sm flex flex-col rounded-xl bg-gradient-to-r  from-text/5 to-background/5 border border-text/10"
 			>
 				{children}
-			</div>
+			</motion.div>
 		</div>
 	);
 }
