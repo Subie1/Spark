@@ -42,4 +42,6 @@
 - Community Groups.
 
 # Lastly
-> Enjoy Chatting!
+#### Built with [Tauri](https://tauri.app/) and my [ExpressViteTemplate](https://github.com/Subie1/ExpressViteTemplate)
+
+`   Enjoy Chatting    `
