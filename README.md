@@ -1,4 +1,13 @@
-# The self-hosted chatting platform
+<h1 align="center">Spark</h1>
+<p align="center">The self-hosted chatting platform</p>
+
+<p align="center">
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MPL%202.0-red.svg"></a>
+  <a href="https://github.com/Subie1/Spark/releases"><img src="https://img.shields.io/badge/Free%20&%20Open--Source-blue"></a>
+</p>
+
+<p float="center" align="center">
+</p>
 
 > [!NOTE]
 > Made with 💖 by Subie1
