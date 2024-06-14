@@ -13,7 +13,7 @@ async function StartBackend() {
 }
 
 async function StartFrontend() {
-	const output = exec("cd ./src/dashboard && npm run dev");
+	const output = exec("cd ./src/client/desktop && npm run dev");
 
 	output.stdout.on("data", (message) => {
 		process.stdout.write(message);

@@ -10,7 +10,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@tauri-apps/api": "^1.5.3",
+		"@tauri-apps/plugin-notification": "^2.0.0-beta.5",
 		"@uidotdev/usehooks": "^2.4.1",
 		"axios": "^1.6.3",
 		"react": "^18.2.0",

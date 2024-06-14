@@ -107,13 +107,13 @@ export default function FriendsPage() {
 														className="cursor-pointer flex items-center justify-start gap-2"
 													>
 														<img
-															src={`https://api.dicebear.com/7.x/thumbs/svg?seed=${friend.name}`}
+															src={`https://api.dicebear.com/7.x/thumbs/svg?seed=${friend.id}`}
 															className="w-8 h-8 rounded-full"
 														/>
 														<div className="flex-col flex">
 															<div className="flex items-center justify-start gap-2">
 																<header className="text-text/80">
-																	{friend.name}
+																	{friend.username}
 																</header>
 																<div
 																	className={`${
@@ -178,13 +178,13 @@ export default function FriendsPage() {
 														className="cursor-pointer flex items-center justify-start gap-2"
 													>
 														<img
-															src={`https://api.dicebear.com/7.x/thumbs/svg?seed=${friend.name}`}
+															src={`https://api.dicebear.com/7.x/thumbs/svg?seed=${friend.id}`}
 															className="w-8 h-8 rounded-full"
 														/>
 														<div className="flex-col flex">
 															<div className="flex items-center justify-start gap-2">
 																<header className="text-text/80">
-																	{friend.name}
+																	{friend.username}
 																</header>
 																<div className="bg-gray-200 w-2 h-2 rounded-full"></div>
 															</div>
@@ -233,13 +233,13 @@ export default function FriendsPage() {
 										<div className="flex items-start justify-between gap-2 w-full">
 											<div className="flex items-center justify-center gap-2">
 												<img
-													src={`https://api.dicebear.com/7.x/thumbs/svg?seed=${pending.name}`}
+													src={`https://api.dicebear.com/7.x/thumbs/svg?seed=${pending.id}`}
 													className="w-8 h-8 rounded-full"
 												/>
 												<div className="flex-col flex">
 													<div className="flex items-center justify-start gap-2">
 														<header className="text-text/80">
-															{pending.name}
+															{pending.username}
 														</header>
 														<div className="bg-gray-200 w-2 h-2 rounded-full"></div>
 													</div>

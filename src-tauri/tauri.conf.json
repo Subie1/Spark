@@ -1,62 +1,61 @@
 {
-	"$schema": "../node_modules/@tauri-apps/cli/schema.json",
-	"build": {
-		"beforeBuildCommand": "npm run build",
-		"beforeDevCommand": "npm run dev",
-		"devPath": "http://localhost:5173",
-		"distDir": "../src/dashboard/dist"
-	},
-	"package": {
-		"productName": "spark",
-		"version": "0.0.1"
-	},
-	"tauri": {
-		"allowlist": {
-			"notification": {
-				"all": true
-			}
-		},
-		"bundle": {
-			"active": true,
-			"category": "DeveloperTool",
-			"copyright": "",
-			"deb": {
-				"depends": []
-			},
-			"externalBin": [],
-			"icon": ["icons/icon.png", "icons/icon.ico"],
-			"identifier": "me.subie.spark",
-			"longDescription": "",
-			"macOS": {
-				"entitlements": null,
-				"exceptionDomain": "",
-				"frameworks": [],
-				"providerShortName": null,
-				"signingIdentity": null
-			},
-			"resources": [],
-			"shortDescription": "",
-			"targets": ["nsis", "msi"],
-			"windows": {
-				"certificateThumbprint": null,
-				"digestAlgorithm": "sha256",
-				"timestampUrl": ""
-			}
-		},
-		"security": {
-			"csp": null
-		},
-		"updater": {
-			"active": false
-		},
-		"windows": [
-			{
-				"fullscreen": false,
-				"minHeight": 580,
-				"resizable": true,
-				"title": "Spark",
-				"minWidth": 1040
-			}
-		]
-	}
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "frontendDist": "../src/client/desktop/dist",
+    "devUrl": "http://localhost:5173"
+  },
+  "bundle": {
+    "active": true,
+    "category": "SocialNetworking",
+    "copyright": "",
+    "targets": [
+      "nsis",
+      "msi"
+    ],
+    "externalBin": [],
+    "icon": [
+      "icons/icon.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    },
+    "longDescription": "",
+    "macOS": {
+      "entitlements": null,
+      "exceptionDomain": "",
+      "frameworks": [],
+      "providerShortName": null,
+      "signingIdentity": null
+    },
+    "resources": [],
+    "shortDescription": "",
+    "linux": {
+      "deb": {
+        "depends": []
+      }
+    }
+  },
+  "productName": "spark",
+  "version": "0.0.1",
+  "identifier": "me.subie.spark",
+  "plugins": {},
+  "app": {
+    "windows": [
+      {
+        "fullscreen": false,
+        "minHeight": 580,
+        "resizable": true,
+        "title": "Spark",
+        "minWidth": 1040
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
 }

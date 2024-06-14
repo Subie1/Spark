@@ -208,6 +208,8 @@ router.get("/:id", (req, res) => {
 	return res.status(200).json({
 		...relation,
 		name: users.get(req.params.id).name,
+		username: users.get(req.params.id).username,
+		id: users.get(req.params.id).id,
 		status: users.get(req.params.id).status,
 	});
 });

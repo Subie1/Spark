@@ -29,7 +29,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/hi", (_, res) => {
+app.get("/api/hi", (_, res) => {
 	res.end("Hi or something idk I have social anxiety");
 });
 
@@ -40,7 +40,7 @@ app.use("/api/channels", require("./src/routes/Channels"));
 app.use("/api/info", require("./src/routes/Info"));
 
 server.listen(port, () =>
-	console.log(" BACKEND ".bgWhite.black + " Ready on port " + `${port}`.yellow)
+	console.log("   " + " BACKEND ".bgWhite.black + " Ready on port " + `${port}`.yellow)
 );
 
 process.on("uncaughtException", () => {});

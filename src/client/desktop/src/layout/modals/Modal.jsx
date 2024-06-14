@@ -15,7 +15,7 @@ export default function Modal({ children }) {
 			<motion.div
 				initial={{ scale: 0.5 }}
 				animate={{ scale: 1 }}
-				className="drop-shadow-lg backdrop-blur-sm flex flex-col rounded-xl bg-gradient-to-r  from-text/5 to-background/5 border border-text/10"
+				className="drop-shadow-lg backdrop-blur-sm flex flex-col rounded-xl bg-gradient-to-l from-text/5 via-background/20 to-text/5 border border-text/10"
 			>
 				{children}
 			</motion.div>

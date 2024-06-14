@@ -1,18 +1,18 @@
 {
-	"name": "expressvitetemplate",
-	"version": "1.0.0",
-	"description": "Basic template for having Vite Frontend & Express Backend",
+	"name": "spark",
+	"version": "0.1.2A",
+	"description": "The perfect messaging platform for the boys",
 	"main": "index.js",
 	"scripts": {
 		"tauri": "tauri",
 		"dev": "node .",
 		"package": "node package.js",
-		"build": "cd ./src/dashboard && npm run build",
+		"build": "cd ./src/client/desktop && npm run build",
 		"install-backend": "cd ./src/api && npm i",
-		"install-frontend": "cd ./src/dashboard && npm i",
+		"install-frontend": "cd ./src/client/desktop && npm i",
 		"install-all": "npm i && npm run install-backend && npm run install-frontend",
 		"update-backend": "cd ./src/api && npm update",
-		"update-frontend": "cd ./src/dashboard && npm update",
+		"update-frontend": "cd ./src/client/desktop && npm update",
 		"update-all": "npm update && npm run update-backend && npm run update-frontend"
 	},
 	"repository": {
@@ -33,6 +33,7 @@
 	"homepage": "https://github.com/Subie1/ExpressViteTemplate#readme",
 	"dependencies": {
 		"@tauri-apps/api": "^2.0.0-beta.13",
+		"@tauri-apps/plugin-notification": "^2.0.0-beta.5",
 		"colors": "^1.4.0",
 		"dotenv": "^16.3.1",
 		"framer-motion": "^11.2.10"

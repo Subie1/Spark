@@ -32,7 +32,7 @@ async function Main() {
 	}
 
 	await copyFileSync(
-		"./target/server-software.exe",
+		`./target/server-software${extension}`,
 		`./src-tauri/assets/server-software${extension}`
 	);
 
