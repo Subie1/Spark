@@ -7,6 +7,10 @@
 </p>
 
 <p float="center" align="center">
+  <img src="https://github.com/Subie1/Spark/assets/133152722/73e2ccdc-4756-4bc0-970e-6c07f00f3825" width="45%" float="center" />
+  <img src="https://github.com/Subie1/Spark/assets/133152722/2fd46d6b-d16e-411b-81fe-0fc5f49badc1" width="45%" float="center" />
+  <img src="https://github.com/Subie1/Spark/assets/133152722/14d02890-bb59-49e2-abb5-c1d9be3d583b" width="45%" float="center" />
+  <img src="https://github.com/Subie1/Spark/assets/133152722/d097b787-4a88-425f-a13c-b2e8bbda9de6" width="45%" float="center" />
 </p>
 
 > [!NOTE]
